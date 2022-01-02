@@ -1,0 +1,158 @@
+@media (max-width: 1480px) {
+  .header {
+    &__drop-mail {
+      margin: 0 20px;
+    }
+  }
+  .menu {
+    &__item {
+      & + .menu__item {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1449px) {
+  .top {
+    &::before {
+      height: 150px;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .header {
+    &__link {
+      font-size: 14px;
+    }
+  }
+  .menu {
+    &__item {
+      & + .menu__item {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .header {
+    display: none;
+  }
+  .top {
+    padding: 40px 0 65px;
+    &::before {
+      display: none;
+    }
+    &__wrapper {
+      justify-content: center;
+    }
+    &__img {
+      display: none;
+    }
+    &__box-item {
+      display: none;
+      & + .top__box-item {
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
+    &__box-item-link {
+      color: #3a3a3a;
+      &::before {
+        background-image: url("../images/mobile/arrow.svg");
+      }
+    }
+    &__box-item-text {
+      color: #3a3a3a;
+    }
+  }
+  .top-slider {
+    margin-top: 36px;
+    &__inner {
+      padding-top: 50px;
+      background: #fff;
+      border-radius: 22px;
+      margin-top: -22px;
+      position: relative;
+      z-index: 5;
+      .top__box-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        & + .top__box-item {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .mobile {
+    &__menu {
+      display: flex;
+    }
+    &__link {
+      display: block;
+    }
+  }
+}
+@media (max-width: 930px) {
+  .top {
+    &__wrapper {
+      justify-content: flex-start;
+    }
+  }
+}
+@media (max-width: 799px) {
+  .top-slider {
+    &__btn {
+      font-size: 13px;
+      line-height: 16px;
+      color: #f9b70d;
+      background: #fff;
+      border: none;
+      box-shadow: none;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/mobile/arrow-yel.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6px;
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .top {
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .top {
+    &__box-link {
+      margin: 0 auto 47px;
+      font-size: 12px;
+      max-width: 180px;
+    }
+    &__box-img {
+      margin: 0 auto;
+    }
+    &__box-title {
+      text-align: center;
+      font-size: 10px;
+      line-height: 18px;
+      max-width: 200px;
+      width: 100%;
+      margin: 20px auto 30px;
+    }
+    &__box-inner {
+      justify-content: center;
+    }
+  }
+}

@@ -157,10 +157,29 @@
 
       <section class="top" style="background-image: url(../images/top/bg.jpg);">
         <div class="container-top">
+          <div class="mobile__menu">
+            <a class="mobile__menu-btn" href="#">
+              <img class="mobile__menu-btn-img" src="images/mobile/menu-burger-img.svg" alt="">
+            </a>
+            <div class="mobile__menu-social">
+              <a class="mobile__menu-link" href="#">
+                <img src="images/mobile/tel.svg" alt="">
+              </a>
+              <a class="mobile__menu-link" href="#">
+                <img src="images/mobile/mail.svg" alt="">
+              </a>
+              <a class="mobile__menu-link" href="#">
+                <img src="images/mobile/geo.svg" alt="">
+              </a>
+            </div>
+          </div>
           <div class="top__wrapper">
             <div class="top__box">
               <a class="top__box-img-link" href="#">
-                <img class="top__box-img" src="images/top/logo.svg" alt="">
+                <picture>
+                  <source media="(max-width: 600px)" srcset="images/mobile/logo.svg">
+                  <img class="top__box-img" src="images/top/logo.svg" alt="">
+                </picture>
               </a>
               <h1 class="top__box-title">
                 Общественная организация по защите прав животных
@@ -169,6 +188,18 @@
                 Сделать пожертвование
               </a>
               <div class="top__box-inner">
+                <a class="mobile__link" href="#">
+                  <img src="images/mobile/facebook.svg" alt="">
+                </a>
+                <a class="mobile__link" href="#">
+                  <img src="images/mobile/youtube.svg" alt="">
+                </a>
+                <a class="mobile__link" href="#">
+                  <img src="images/mobile/instagram.svg" alt="">
+                </a>
+                <a class="mobile__link" href="#">
+                  <img src="images/mobile/telegram.svg" alt="">
+                </a>
                 <div class="top__box-item">
                   <a class="top__box-item-link" href="#">Приют</a>
                   <p class="top__box-item-text">
@@ -194,220 +225,241 @@
         </div>
       </section>
 
-      <section class="top-slider swiper">
-        <div class="top-slider__wrapper swiper-wrapper">
 
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/1.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Котофей</h6>
-              <a class="top-slider__link top-slider__link--blue" href="#">#Под опекой</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">3 года</p>
-              <p class="top-slider__tag">2 кг</p>
-            </div>
-          </div>
-
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/2.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Шелли</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">8 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/3.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Пыжик</h6>
-              <a class="top-slider__link top-slider__link--red" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">8 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/4.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Жози и Мушка</h6>
-              <a class="top-slider__link top-slider__link--grey" href="#">#Инвалид</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/5.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Котофей</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">3 года</p>
-              <p class="top-slider__tag">2 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/6.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Лада</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">4 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/7.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Пыжик</h6>
-              <a class="top-slider__link top-slider__link--violet" href="#">#Ищем куратора</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">8 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/1.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Котофей</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">3 года</p>
-              <p class="top-slider__tag">2 кг</p>
-            </div>
-          </div>
-
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/2.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Шелли</h6>
-              <a class="top-slider__link top-slider__link--grey" href="#">#Инвалид</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">8 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/3.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Пыжик</h6>
-              <a class="top-slider__link top-slider__link--red" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">8 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/4.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Жози и Мушка</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/5.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Котофей</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">3 года</p>
-              <p class="top-slider__tag">2 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/6.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Лада</h6>
-              <a class="top-slider__link top-slider__link--violet" href="#">#Ищем куратора</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">4 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
-          <div class="top-slider__slide swiper-slide">
-            <a class="top-slider__slide-link" href="#">
-              <img class="top-slider__img" src="images/top-slider/7.jpg" alt="">
-            </a>
-            <div class="top-slider__box">
-              <h6 class="top-slider__title">Пыжик</h6>
-              <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
-            </div>
-            <div class="top-slider__tags">
-              <p class="top-slider__tag">Привит</p>
-              <p class="top-slider__tag">Стер.</p>
-              <p class="top-slider__tag">8 мес.</p>
-              <p class="top-slider__tag">5 кг</p>
-            </div>
-          </div>
+      <section class="top-slider__inner">
+        <div class="top__box-item">
+          <a class="top__box-item-link" href="#">Приют</a>
+          <p class="top__box-item-text">
+            В приюте живут наши спасенные подопечные которые ищут дом.
+          </p>
         </div>
-        <div class="container">
-          <a class="top-slider__btn" href="#">Все животные</a>
+        <div class="top__box-item">
+          <a class="top__box-item-link" href="#">О нас</a>
+          <p class="top__box-item-text">
+            В нашей команде уже ХХ человек. Вы можете к нам присоединиться.
+          </p>
+        </div>
+        <div class="top__box-item">
+          <a class="top__box-item-link" href="#">Помощь</a>
+          <p class="top__box-item-text">
+            Узнайте как вы можете помочь нам продолжать спасать животных в беде.
+          </p>
+        </div>
+        <div class="top-slider swiper">
+          <div class="top-slider__wrapper swiper-wrapper">
+
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/1.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Котофей</h6>
+                <a class="top-slider__link top-slider__link--blue" href="#">#Под опекой</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">3 года</p>
+                <p class="top-slider__tag">2 кг</p>
+              </div>
+            </div>
+
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/2.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Шелли</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">8 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/3.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Пыжик</h6>
+                <a class="top-slider__link top-slider__link--red" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">8 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/4.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Жози и Мушка</h6>
+                <a class="top-slider__link top-slider__link--grey" href="#">#Инвалид</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/5.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Котофей</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">3 года</p>
+                <p class="top-slider__tag">2 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/6.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Лада</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">4 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/7.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Пыжик</h6>
+                <a class="top-slider__link top-slider__link--violet" href="#">#Ищем куратора</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">8 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/1.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Котофей</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">3 года</p>
+                <p class="top-slider__tag">2 кг</p>
+              </div>
+            </div>
+
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/2.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Шелли</h6>
+                <a class="top-slider__link top-slider__link--grey" href="#">#Инвалид</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">8 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/3.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Пыжик</h6>
+                <a class="top-slider__link top-slider__link--red" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">8 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/4.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Жози и Мушка</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/5.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Котофей</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">3 года</p>
+                <p class="top-slider__tag">2 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/6.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Лада</h6>
+                <a class="top-slider__link top-slider__link--violet" href="#">#Ищем куратора</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">4 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+            <div class="top-slider__slide swiper-slide">
+              <a class="top-slider__slide-link" href="#">
+                <img class="top-slider__img" src="images/top-slider/7.jpg" alt="">
+              </a>
+              <div class="top-slider__box">
+                <h6 class="top-slider__title">Пыжик</h6>
+                <a class="top-slider__link top-slider__link--green" href="#">#Ищем дом</a>
+              </div>
+              <div class="top-slider__tags">
+                <p class="top-slider__tag">Привит</p>
+                <p class="top-slider__tag">Стер.</p>
+                <p class="top-slider__tag">8 мес.</p>
+                <p class="top-slider__tag">5 кг</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <a class="top-slider__btn" href="#">Все животные</a>
+          </div>
         </div>
       </section>
 
-      <section class="help">
+      <!-- <section class="help">
         <div class="container">
           <div class="help__wrapper">
             <h4 class="help__title">3 способа нам помочь</h4>
@@ -710,11 +762,11 @@
         <div class="container-min">
           <img class="footer__img" src="images/footer/bg.jpg" alt="">
         </div>
-      </section>
+      </section> -->
 
-    </div>
+      <!-- </div> -->
 
-    <footer class="footer">
+      <!-- <footer class="footer">
       <div class="container-footer">
         <div class="footer__wrapper">
           <div class="footer__home-box">
@@ -760,12 +812,12 @@
           </nav>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-  </div>
+    </div>
 
 
-  <script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
