@@ -13,8 +13,16 @@ body {
 body {
   background-color: #f8f8f8;
 }
+.fancybox__counter{
+  @extend %mon-500;
+}
 .container-header {
   max-width: 1745px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-big {
+  max-width: 1550px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -48,7 +56,7 @@ body {
   line-height: 68px;
   @extend %int-800;
   color: #000;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
 }
 .tags {
   display: flex;
@@ -56,7 +64,7 @@ body {
   align-items: center;
   margin-bottom: 27px;
   &__tag {
-    margin: 23px 23px 0 0;
+    margin: 15px 15px 0 0;
     font-size: 14px;
     line-height: 20px;
     color: #767676;
