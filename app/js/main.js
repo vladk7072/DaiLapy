@@ -1,15 +1,11 @@
+
+
 $(function () {
 
-  $(".mobile__menu-btn").on("click", function(){
-    $(".menu__mobile").toggleClass("menu__mobile--active")
+  $(".mobile__menu-btn").click(function () {
+    $(".menu__mobile").toggleClass("menu__mobile--active");
   });
 
-  $(document).mouseup(function (e) {
-    var btn = $(".menu");
-    if (!btn.is(e.target) && btn.has(e.target).length === 0){
-      $(".menu__mobile").removeClass("menu__mobile--active");
-    }
-  });
   
   const topSlider = new Swiper(".top-slider", {
     freeMode: true,

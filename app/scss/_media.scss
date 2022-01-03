@@ -79,10 +79,10 @@
     }
   }
   .cell {
-    &__item{
+    &__item {
       padding: 20px 10px;
     }
-    &__text-inner{
+    &__text-inner {
       max-width: 480px;
       width: 100%;
     }
@@ -91,8 +91,31 @@
       line-height: 33px;
       margin-bottom: 15px;
     }
-    &__text{
+    &__text {
       font-size: 18px;
+    }
+  }
+  .all {
+    &__content-img {
+      margin: 0 auto;
+    }
+    &__content-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__content-box {
+      flex-direction: column;
+    }
+    &__content-title {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  .finance {
+    &__card-inner {
+      flex-direction: column;
+    }
+    &__texts {
+      margin: 30px 0 0 0;
     }
   }
 }
@@ -185,10 +208,16 @@
     &__desc {
       display: block;
     }
+    &__btn {
+      background-color: transparent;
+    }
   }
   .mobile {
     &__menu {
       display: flex;
+      &-sect{
+        display: block;
+      }
     }
     &__link {
       display: block;
@@ -279,8 +308,44 @@
       grid-template-columns: repeat(5, 1fr);
     }
   }
-}
-@media (max-width: 1084px) {
+  .all {
+    &__top-title {
+      font-size: 25px;
+      line-height: 32px;
+      max-width: 670px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__top-list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+    }
+    &__top-text {
+      display: inline-block;
+    }
+    &__top-item {
+      & + .all__top-item {
+        margin-left: 0;
+      }
+    }
+  }
+  .pet {
+    &__box-text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .where {
+    &__wrapper {
+      flex-direction: column;
+      align-items: start;
+      padding: 35px 30px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
 }
 @media (max-width: 1023px) {
   .mailing {
@@ -375,6 +440,52 @@
       font-size: 15px;
     }
   }
+  .all {
+    &__content-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__content-text {
+      margin-bottom: 0;
+    }
+  }
+  .pet {
+    &__top {
+      flex-direction: column;
+    }
+    &__title {
+      margin-top: 30px;
+    }
+    &__box {
+      margin-left: 0;
+      max-width: 800px;
+    }
+    &__gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__gallery-img {
+      margin: 0 auto;
+    }
+    &__tags {
+      margin-bottom: 45px;
+    }
+    &__info {
+      text-align: left;
+    }
+  }
+  .finance {
+    &__post {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__post-item {
+      & + .finance__post-item {
+        margin-top: 40px;
+      }
+    }
+    &__pays {
+      grid-template-columns: repeat(1, minmax(auto, 470px));
+    }
+  }
 }
 @media (max-width: 930px) {
   .top {
@@ -457,13 +568,29 @@
       width: 100%;
     }
   }
-  .cell{
-    &__item{
+  .cell {
+    &__item {
       flex-direction: column;
       align-items: start;
     }
-    &__images{
+    &__images {
       margin: 20px 0 20px;
+    }
+  }
+  .finance {
+    &__texts-inner {
+      flex-direction: column;
+    }
+    &__texts-item {
+      & + .finance__texts-item {
+        margin-left: 0;
+        margin-top: 12px;
+      }
+    }
+  }
+  .mobile{
+    &__menu-sect{
+      padding: 20px 15px;
     }
   }
 }
@@ -476,6 +603,15 @@
   .about-us {
     &__items {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .come {
+    &__box {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__box-text {
+      margin-bottom: 20px;
     }
   }
 }
@@ -516,8 +652,34 @@
       line-height: 15px;
     }
     &__link {
-      font-size: 7px;
+      font-size: 9px;
       line-height: 135%;
+    }
+  }
+  .all {
+    &__top-title {
+      max-width: 500px;
+      width: 100%;
+      font-size: 19px;
+    }
+  }
+  .pet {
+    padding: 100px 0 140px;
+    &__link {
+      padding: 14px 10px;
+    }
+    &__link-btn {
+      padding: 14px 10px;
+    }
+  }
+  .up {
+    padding: 40px 0;
+    &__title {
+      max-width: 540px;
+      margin: 100%;
+      margin: 0 auto;
+      font-size: 28px;
+      line-height: 37px;
     }
   }
 }
@@ -574,9 +736,22 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .useful{
-    &__inner{
+  .useful {
+    &__inner {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .all {
+    &__content-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__content-box {
+      margin: 13px 0;
+    }
+  }
+  .points {
+    &__wrapper {
+      padding: 30px;
     }
   }
 }
@@ -654,6 +829,15 @@
       order: -1;
     }
   }
+  .finance {
+    &__card-wrapper {
+      padding: 20px;
+    }
+    &__card-title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
 }
 @media (max-width: 600px) {
   .top {
@@ -706,6 +890,40 @@
       margin-top: 9px;
     }
   }
+  .all {
+    &__top-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .up {
+    &__title {
+      max-width: 390px;
+      font-size: 25px;
+    }
+  }
+  .finance {
+    padding-top: 20px;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__img {
+      order: -1;
+    }
+    &__title {
+      font-size: 39px;
+      line-height: 43px;
+      text-align: center;
+      margin: 25px auto;
+    }
+  }
+  .points {
+    &__item {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item-title {
+      margin-top: 80px;
+    }
+  }
 }
 @media (max-width: 500px) {
   .news {
@@ -718,9 +936,202 @@
       padding: 30px;
     }
   }
-  .cell{
-    &__item{
+  .cell {
+    &__item {
       padding: 0;
+    }
+  }
+  .pet {
+    &__gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__tag + .pet__tag {
+      margin-left: 40px;
+    }
+    &__title {
+      font-size: 43px;
+      margin-bottom: 26px;
+    }
+  }
+  .finance {
+    padding-bottom: 70px;
+    &__pays-title {
+      font-size: 17px;
+      line-height: 21px;
+    }
+    &__card-item-num {
+      font-size: 21px;
+    }
+    &__pays-num {
+      font-size: 19px;
+    }
+  }
+  .points {
+    &__list-item {
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &__item-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .where {
+    &__wrapper {
+      padding: 20px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 23px;
+    }
+  }
+  .come {
+    &__wrapper {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+  .holst {
+    &__wrapper {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .all {
+    &__content-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__content-item {
+      .top-slider__tags {
+        margin: 12px auto 0;
+        max-width: 275px;
+        width: 100%;
+      }
+    }
+    &__content-box {
+      .top-slider {
+        &__link {
+          margin: 0 auto;
+          max-width: 275px;
+          width: 100%;
+        }
+      }
+    }
+    &__content-text {
+      margin: 0 auto;
+      max-width: 275px;
+      width: 100%;
+    }
+  }
+  .finance {
+    &__title {
+      font-size: 29px;
+      line-height: 29px;
+    }
+    &__tag {
+      font-size: 11px;
+      padding: 12px;
+    }
+    &__card-wrapper {
+      padding: 20px 10px;
+    }
+    &__card-item {
+      padding: 15px 15px 30px;
+    }
+    &__inner-text {
+      font-size: 15px;
+    }
+    &__inner-text span {
+      margin-right: 9px;
+    }
+  }
+  .points {
+    &__wrapper {
+      padding: 30px 10px;
+    }
+  }
+  .come {
+    &__wrapper {
+      padding: 30px 10px;
+    }
+  }
+  .holst{
+    &__wrapper{
+      padding: 30px 10px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .all {
+    &__top-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .pet {
+    &__data {
+      margin-right: 10px;
+    }
+    &__box-text {
+      font-size: 15px;
+    }
+    &__info {
+      font-size: 19px;
+    }
+  }
+  .up {
+    &__title {
+      font-size: 21px;
+      line-height: 28px;
+    }
+  }
+  .finance {
+    &__inner-text {
+      font-size: 14px;
+    }
+    &__post-img {
+      margin-left: 0;
+    }
+  }
+  .where {
+    &__wrapper {
+      padding: 15px;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .finance {
+    &__card-wrapper {
+      padding: 20px 5px;
+    }
+    &__card-item-num {
+      font-size: 19px;
+    }
+    &__card-title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__pays-num {
+      font-size: 17px;
     }
   }
 }
