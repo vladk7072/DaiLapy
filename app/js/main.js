@@ -10,7 +10,6 @@ $(function () {
       $(".menu__mobile").removeClass("menu__mobile--active");
     }
   });
-
   
   const topSlider = new Swiper(".top-slider", {
     freeMode: true,
