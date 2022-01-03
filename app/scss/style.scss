@@ -70,6 +70,41 @@
   }
 }
 .menu {
+  &__mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #272727;
+    border-radius: 0 0 29px 0;
+    z-index: 10;
+    min-width: 235px;
+    padding: 0 50px;
+    transition: all 0.3s;
+    transform: translateX(-110%);
+    opacity: 0;
+    &--active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
+    .menu__item {
+      & + .menu__item {
+        margin-left: 0;
+      }
+    }
+    .menu__link {
+      & + .menu__link {
+        margin-top: 7px;
+      }
+    }
+  }
   &__list {
     display: flex;
     align-items: center;
@@ -262,8 +297,61 @@
 }
 .top-slider {
   padding-bottom: 60px;
-  &__inner{
-    .top__box-item{
+  &__desc {
+    display: none;
+    margin-top: 40px;
+    &-slide {
+      position: relative;
+    }
+    &-img {
+      object-fit: cover;
+    }
+    &-title {
+      font-size: 30px;
+      line-height: 135%;
+      @extend %int-700;
+      color: #3a3a3a;
+      margin-bottom: 8px;
+    }
+    &-inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-box {
+      padding: 23px 30px;
+      background-color: #fff;
+    }
+    &-subtext {
+      font-size: 13px;
+      line-height: 135%;
+      @extend %int-700;
+      text-transform: uppercase;
+      color: #3a3a3a;
+      & + .top-slider__desc-subtext {
+        margin-left: 16px;
+      }
+    }
+    &__mob {
+      &-title {
+        font-size: 17px;
+        line-height: 26px;
+        @extend %int-600;
+      }
+      &-subtext {
+        font-size: 8px;
+        line-height: 15px;
+        @extend %int-400;
+      }
+    }
+    &-tags {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+    }
+  }
+  &__inner {
+    .top__box-item {
       display: none;
     }
   }
@@ -371,6 +459,45 @@
 }
 .help {
   padding-bottom: 90px;
+  &__wrapper-mobile{
+    display: none;
+  }
+  &__inner-mobile {
+    background: #fff;
+    box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 30px 25px;
+    img {
+      margin: 0 auto 13px;
+    }
+    & + .help__inner-mobile {
+      margin-top: 12px;
+    }
+  }
+  &__title-mobile {
+    font-size: 20px;
+    line-height: 31px;
+    @extend %int-700;
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 35px;
+  }
+  &__box-title-mobile {
+    font-size: 17px;
+    line-height: 26px;
+    @extend %int-600;
+    text-align: center;
+    color: #3a3a3a;
+  }
+  &__box-text-mobile {
+    font-size: 10px;
+    line-height: 15px;
+    @extend %int-300;
+    text-align: center;
+    color: #3a3a3a;
+    max-width: 200px;
+    width: 100%;
+    margin: 5px auto;
+  }
   &__wrapper {
     background-color: #fff;
     box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.05);
@@ -442,6 +569,12 @@
     display: flex;
     justify-content: space-between;
     background-color: #ffcd40;
+    &-mobile{
+      display: none;
+    }
+  }
+  &__btn-mobile{
+    @extend %int-600;
   }
   &__img {
     max-width: 364px;
@@ -487,6 +620,9 @@
 }
 .news {
   padding-bottom: 90px;
+  &__wrapper-mobile{
+    display: none;
+  }
   &__title {
     font-size: 25px;
     line-height: 68px;
@@ -587,6 +723,21 @@
   }
   &__btn {
     margin-top: 70px;
+    padding-right: 25px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/news/arrow-white.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 18px;
+    }
   }
 }
 .mailing {
@@ -911,6 +1062,9 @@
 .footer {
   padding: 70px 0 90px;
   background-color: #272727;
+  &__menu-mobile {
+    display: none;
+  }
   &__img {
     margin: 0 auto;
   }
@@ -1813,9 +1967,12 @@
       margin-left: 11px;
     }
   }
+  &__menu-btn {
+    z-index: 20;
+  }
   &__link {
     display: none;
-    & + .mobile__link{
+    & + .mobile__link {
       margin-left: 11px;
     }
     img {

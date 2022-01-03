@@ -1,8 +1,21 @@
 $(function () {
+
+  $(".mobile__menu-btn").on("click", function(){
+    $(".menu__mobile").toggleClass("menu__mobile--active")
+  });
+
+  $(document).mouseup(function (e) {
+    var btn = $(".menu");
+    if (!btn.is(e.target) && btn.has(e.target).length === 0){
+      $(".menu__mobile").removeClass("menu__mobile--active");
+    }
+  });
+
+  
   const topSlider = new Swiper(".top-slider", {
     freeMode: true,
     spaceBetween: 15,
-    slidesPerView: 1.8,
+    slidesPerView: 2.8,
     speed: 500,
     breakpoints: {
       1450: {
@@ -13,12 +26,24 @@ $(function () {
       },
       800: {
         slidesPerView: "4.5"
-      },
-      500: {
-        slidesPerView: "2.8"
       }
     },
   });
+  const topSlider__desc = new Swiper(".top-slider__desc", {
+    freeMode: true,
+    slidesPerView: 1.8,
+    speed: 500,
+    spaceBetween: 10,
+    breakpoints: {
+      600: {
+        slidesPerView: "3.2",
+      },
+      500: {
+        slidesPerView: "2.5"
+      }
+    }
+  });
+
   $(".top-slider__btn").on("mousedown", function () {
     $(".top-slider__btn").addClass("top-slider__btn--on");
   });
