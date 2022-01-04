@@ -851,7 +851,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #cdf0f0;
+    // background-color: #cdf0f0;
+    background-color: #cef1f4;
     padding: 60px 120px;
   }
   &__title {
@@ -1975,7 +1976,7 @@
       display: none;
       padding: 40px 15px;
       background-color: #3dc0bc;
-      .mobile__menu{
+      .mobile__menu {
         margin-bottom: 0;
       }
     }
@@ -2001,6 +2002,19 @@
       width: 35px;
       height: 35px;
       object-fit: cover;
+    }
+  }
+}
+.copy {
+  &__link {
+    display: inline-block;
+    margin-top: 20px;
+    @extend %int-400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    span {
+      color: #ffcd40;
     }
   }
 }
